@@ -12,7 +12,7 @@ namespace UserRegistrationProblem
             validate.Validate("Mukul");
             validate.ValidateLastName("Patel");
             validate.ValidateEmail("abc.xyz@bl.co.in");
-            validate.ValidateNumber("91 5256542514");
+            validate.ValidateNumber("91 6256542514");
         }
     }
 }
