@@ -9,7 +9,7 @@ namespace UserRegistrationProblem
             Console.WriteLine("User registration");
 
             Validation validate = new Validation();
-            validate.Validate("mukul");
+            validate.Validate("Mukul");
         }
     }
 }
