@@ -21,5 +21,16 @@ namespace UserRegistrationProblem
                 Console.WriteLine("User firstName is invalid");
             }
         }
+        public void ValidateLastName(string name)
+        {
+            if (Regex.IsMatch(name, NAME_REGEX))
+            {
+                Console.WriteLine("User lastName is valid");
+            }
+            else
+            {
+                Console.WriteLine("User lastName is invalid");
+            }
+        }
     }
 }

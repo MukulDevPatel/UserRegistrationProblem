@@ -10,6 +10,7 @@ namespace UserRegistrationProblem
 
             Validation validate = new Validation();
             validate.Validate("Mukul");
+            validate.ValidateLastName("Patel");
         }
     }
 }
