@@ -11,6 +11,7 @@ namespace UserRegistrationProblem
             Validation validate = new Validation();
             validate.Validate("Mukul");
             validate.ValidateLastName("Patel");
+            validate.ValidateEmail("abc.xyz@bl.co.in");
         }
     }
 }
