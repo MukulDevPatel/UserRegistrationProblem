@@ -6,7 +6,10 @@ namespace UserRegistrationProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to user registration");
+            Console.WriteLine("User registration");
+
+            Validation validate = new Validation();
+            validate.Validate("mukul");
         }
     }
 }
