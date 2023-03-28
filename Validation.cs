@@ -11,6 +11,7 @@ namespace UserRegistrationProblem
     {
         public const string NAME_REGEX = "^[A-Z]{1}[a-z]{2,}$";
         public const string EMAIL_PATTERN = "^[0-9a-zA-Z]+[.+-]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$";
+        public const string MOBILENUMBER_REGEX = "^[0-9]{2}[ ][6-9]{1}[0-9]{9}$";
         public void Validate(string name) 
         {
             if (Regex.IsMatch(name, NAME_REGEX))
@@ -42,6 +43,17 @@ namespace UserRegistrationProblem
             else
             {
                 Console.WriteLine("User Email is invalid");
+            }
+        }
+        public void ValidateNumber(string number)
+        {
+            if (Regex.IsMatch(number, MOBILENUMBER_REGEX))
+            {
+                Console.WriteLine("User Number is valid");
+            }
+            else
+            {
+                Console.WriteLine("User Number is invalid");
             }
         }
     }
