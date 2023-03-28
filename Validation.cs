@@ -12,7 +12,7 @@ namespace UserRegistrationProblem
         public const string NAME_REGEX = "^[A-Z]{1}[a-z]{2,}$";
         public const string EMAIL_PATTERN = "^[0-9a-zA-Z]+[.+-]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$";
         public const string MOBILENUMBER_REGEX = "^[0-9]{2}[ ][6-9]{1}[0-9]{9}$";
-        public const string PASSWORD_REGEX = "^[a-z0-9]{8,}";
+        public const string PASSWORD_REGEX = "^[a-z]{8,}";
         public void Validate(string name) 
         {
             if (Regex.IsMatch(name, NAME_REGEX))
