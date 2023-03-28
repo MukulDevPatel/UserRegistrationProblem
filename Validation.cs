@@ -14,7 +14,8 @@ namespace UserRegistrationProblem
         public const string MOBILENUMBER_REGEX = "^[0-9]{2}[ ][6-9]{1}[0-9]{9}$";
         //public const string PASSWORD_REGEX = "^[a-z0-9]{8,}";
         //public const string PASSWORD_REGEX = "^[A-Z]{1}[a-z]{7,}";
-        public const string PASSWORD_REGEX = "^[0-9]{1,}[a-zA-Z]{7,}";
+        //public const string PASSWORD_REGEX = "^[0-9]{1,}[a-zA-Z]{7,}";
+        public const string PASSWORD_REGEX = "^[@#$%^&()/?]{1}[0-9a-zA-Z]{7,}";
         public void Validate(string name) 
         {
             if (Regex.IsMatch(name, NAME_REGEX))
